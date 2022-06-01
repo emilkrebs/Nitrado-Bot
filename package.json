@@ -1,15 +1,21 @@
 {
   "name": "nitrado-bot",
+  "displayName": "Nitrado-Bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Control your Nitrado Gameserver from Discord.",
+  "main": "./src/index.ts",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "start": "tsc && node out/src/index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emilkrebs/Nitrado-Bot"
+  },
+  "author": "Emil Krebs",
+  "license": "MIT",
+  "homepage": "https://github.com/emilkrebs/Nitrado-Bot",
   "dependencies": {
     "colors": "^1.4.0",
     "discord.js": "^13.7.0",
