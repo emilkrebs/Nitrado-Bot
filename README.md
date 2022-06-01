@@ -41,6 +41,11 @@ I am using this Discord Bot to start a ARK Server.
 
 ![Showcase](https://user-images.githubusercontent.com/68400102/171502599-4e5b7572-e83a-4144-a17b-f25d1cc6b6cb.png)
 
+# Commands
+- `!start`: Start your Gameserver
+- `!stop`: Stop your Gameserver
+
+
 ## Known Issues
 
 None
