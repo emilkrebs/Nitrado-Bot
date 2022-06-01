@@ -24,14 +24,22 @@ I am using this Discord Bot to start a ARK Server.
 # Getting started
 - Install [node.js](https://nodejs.org/en/)
 - If you don't already have a Discord Bot, create one [here](https://discord.com/developers/applications/)
+- Get a nitraApi access token [here](https://server.nitrado.net/deu/developer/tokens)
 - Clone the repository using `git clone https://github.com/emilkrebs/nitrado-bot.git`
 - Create a `config.json` file that looks like this:
 ```json
 {
     "token":"your-bot-token",
-    "nitrado_token":"your-nitrado-access-token",
+    "nitrado_token":"your-nitraApi-access-token",
     "nitrado_id":"your-nitrado-serviceid"
 }
 ```
 - `npm i` to install all required dependencies
 - `npm run start` to start the bot
+
+
+## Known Issues
+
+None
+
+[Add Issue](https://github.com/emilkrebs/Nitrado-Bot/issues/new)
