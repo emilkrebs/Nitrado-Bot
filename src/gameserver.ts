@@ -40,10 +40,9 @@ export class Gameserver {
                 'Authorization': this.token
             }
         });
-        await response.json().then(response => {
+        return await response.json().then(response => {
             return response.data.gameserver.status as ServerStatus;
         });
-        return 'stopped' as ServerStatus;
     }
 }
 
@@ -53,4 +52,4 @@ export interface RestartResponse {
 }
 
 export type Status = 'success' | 'failure';
-export type ServerStatus = 'started' | 'stopped' | 'stopping' | 'restarting';
+export type ServerStatus = 'started' | 'stopped' | 'stopping' | 'restarting' | 'failure';

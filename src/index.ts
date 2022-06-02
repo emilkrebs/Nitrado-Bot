@@ -13,13 +13,18 @@ client.once('ready', () => {
         console.log(getTime() + colors.green(`Bot is logged in as ${colors.yellow(client.user.tag)}.`));
     }
 
-    setTimeout(updateStatus, 10000);
+    (function loop() {
+        setTimeout(function () {
+            updateStatus();
+            loop()
+        }, 5000);
+    }());
 });
 
 client.on('messageCreate', async message => {
     if (!message.guildId) return;
     const { content } = message;
-    if (content === '!start') {
+    if (content === '!restart') {
         gameServer.restart().then(async response => {
             console.log(getTime() + colors.green(`Server got started by ${colors.yellow(message.author.tag)}.`));
             return await message.reply({ embeds: [sendResponseEmded(response.status, response.message)] });
@@ -52,8 +57,7 @@ function updateStatus() {
         else if (status == 'stopping' || status == 'stopped') {
             client.user?.setStatus('dnd');
         }
-        client.user?.setActivity({ name: status, type: 'WATCHING' })
-
+        client.user?.setActivity({ name: `Server ${status}`, type: 'WATCHING' })
     });
 }
 function getTime(): string {
