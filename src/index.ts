@@ -10,29 +10,29 @@ const gameServer = new Gameserver(nitrado_id, nitrado_token)
 client.once('ready', () => {
     console.log(getTime() + colors.green('Bot is Ready.'));
     if (client.user) {
-        console.log(getTime() + colors.green(`Bot is logged in as ${colors.yellow(client.user.tag)}.`));
+        console.log(getTime() + colors.green(`Bot is logged in as ${colors.yellow(client.user.tag)}. `));
     }
 
     (function loop() {
         setTimeout(function () {
             updateStatus();
             loop()
-        }, 5000);
+        }, 500);
     }());
 });
 
 client.on('messageCreate', async message => {
     if (!message.guildId) return;
     const { content } = message;
-    if (content === '!restart') {
+    if (content === '!restart' || content === '!start') {
         gameServer.restart().then(async response => {
-            console.log(getTime() + colors.green(`Server got started by ${colors.yellow(message.author.tag)}.`));
+            console.log(getTime() + colors.green(`Server got started by ${colors.yellow(message.author.tag)}. ${response.status == 'success' ? colors.green(response.status) : colors.red(response.status)}`));
             return await message.reply({ embeds: [sendResponseEmded(response.status, response.message)] });
         });
     }
     else if (content === '!stop') {
         gameServer.stop().then(async response => {
-            console.log(getTime() + colors.green(`Server got stopped by ${colors.yellow(message.author.tag)}.`));
+            console.log(getTime() + colors.green(`Server got stopped by ${colors.yellow(message.author.tag)}.  ${response.status ==  'success' ? colors.green(response.status) : colors.red(response.status)}`));
             return await message.reply({ embeds: [sendResponseEmded(response.status, response.message)] });
         });
     }
