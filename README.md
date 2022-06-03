@@ -38,7 +38,7 @@ I am using this Discord Bot to start a ARK Server.
 ```
 - `npm i` to install all required dependencies
 - `npm run start` to start the bot
-- 
+
 ![Showcase](https://user-images.githubusercontent.com/68400102/171502599-4e5b7572-e83a-4144-a17b-f25d1cc6b6cb.png)
 
 
