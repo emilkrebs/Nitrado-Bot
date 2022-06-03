@@ -43,7 +43,7 @@ I am using this Discord Bot to start a ARK Server.
 
 
 # Commands
-- `!start`: Start your Gameserver
+- `!start or !restart`: Restart or Start your Gameserver
 - `!stop`: Stop your Gameserver
 
 ![Showcase 2](https://user-images.githubusercontent.com/68400102/171891996-ad32af6b-b7db-428d-a0ae-11fcea4cacbc.png)
