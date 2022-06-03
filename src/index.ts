@@ -38,6 +38,8 @@ client.on('messageCreate', async message => {
     }
 });
 
+
+
 function sendResponseEmded(status: Status, message: string): MessageEmbed {
     const responseEmded = new MessageEmbed()
         .setColor(status == 'success' ? 'GREEN' : 'RED')
@@ -57,7 +59,10 @@ function updateStatus() {
         else if (status == 'stopping' || status == 'stopped') {
             client.user?.setStatus('dnd');
         }
-        client.user?.setActivity({ name: `Server ${status}`, type: 'WATCHING' })
+        gameServer.getOnlinePlayers().then(async response => {
+            client.user?.setActivity({ name: `Server ${status} ${response.length == 0 ? 'no' : response.length } players online`, type: 'WATCHING' })
+        });
+      
     });
 }
 function getTime(): string {
