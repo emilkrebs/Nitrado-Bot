@@ -19,7 +19,7 @@
        "config.json"
     ],
     "exclude": [
-       "out",
+       "dist",
        "node_modules"
     ]
   }
