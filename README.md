@@ -26,7 +26,7 @@ I am using this Discord Bot to start a ARK Server.
 # Getting started
 - Install [node.js](https://nodejs.org/en/)
 - If you don't already have a Discord Bot, create one [here](https://discord.com/developers/applications/)
-- Get a nitraApi access token [here](https://server.nitrado.net/deu/developer/tokens)
+- Get a nitrApi access token [here](https://server.nitrado.net/deu/developer/tokens)
 - Clone the repository using `git clone https://github.com/emilkrebs/nitrado-bot.git`
 - Create a `config.json` file that looks like this:
 ```json
