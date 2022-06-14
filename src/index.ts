@@ -53,11 +53,14 @@ function sendResponseEmded(status: Status, message: string): MessageEmbed {
 function updateStatus() {
     gameServer.getStatus().then(status => {
         // change bot status
-        if (status == 'started' || status == 'restarting') {
+        if (status == 'started') {
             client.user?.setStatus('online');
         }
-        else if (status == 'stopping' || status == 'stopped') {
+        else if (status == 'stopped') {
             client.user?.setStatus('dnd');
+        }
+        else if (status == 'restarting' ||  status == 'stopping') {
+            client.user?.setStatus('idle');
         }
         gameServer.getOnlinePlayers().then(async response => {
             client.user?.setActivity({ name: `Server ${status} ${response.length == 0 ? 'no' : response.length } players online`, type: 'WATCHING' })
