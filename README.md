@@ -32,7 +32,7 @@ I am using this Discord Bot to start a ARK Server.
 ```json
 {
     "token":"your-bot-token",
-    "nitrado_token":"your-nitraApi-access-token",
+    "nitrado_token":"your-nitrApi-access-token",
     "nitrado_id":"your-nitrado-serviceid"
 }
 ```
