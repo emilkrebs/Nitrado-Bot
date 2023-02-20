@@ -110,7 +110,7 @@ async function updateStatus() {
             break;
     }
     let players = await gameServer.getOnlinePlayers();
-    log(colors.green(`Server is ${colors.yellow(status)} with ${colors.yellow(players.length.toString())} players online.`));
+    log(colors.green(`Server ${colors.yellow(status)} with ${colors.yellow(players.length.toString())} players online.`));
     await client.user?.setActivity({ name: `Server ${status} ${players.length == 0 ? 'no' : players.length} players online`, type: 'PLAYING' })
 }
 
