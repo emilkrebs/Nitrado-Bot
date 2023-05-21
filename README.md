@@ -50,6 +50,6 @@ I am using this Discord Bot to start a ARK Server.
 
 ## Known Issues
 
-None
+- Bot crashes when updating the status https://github.com/emilkrebs/Nitrado-Bot/issues/3
 
 [Add Issue](https://github.com/emilkrebs/Nitrado-Bot/issues/new)
