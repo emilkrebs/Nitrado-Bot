@@ -3,7 +3,7 @@
 	  <img width="256" alt="Nitrado-Bot Logo" src="https://user-images.githubusercontent.com/68400102/171499841-642a53a2-e00d-4688-9637-c993a86a8161.png">
 	</a>
   <h3>
-    Controll your Nitrado Gameserver
+    Control your Nitrado Gameserver
   </h3>
 </div>
 
@@ -17,11 +17,17 @@
 
 <hr>
 
-<a href="https://www.buymeacoffee.com/emilkrebs" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+**⚠️This project needs a major rework and currently has many issues.⚠️**
 
+- [ ] Update discord.js 
+- [ ] Fix fatal issue https://github.com/emilkrebs/Nitrado-Bot/issues/3
+- [ ] move from colors to chalk
+- [ ] update node-fetch
+- [ ] update typescript
+ 
 This Bot lets you and others start your Nitrado Gameserver from Discord. 
 
-I am using this Discord Bot to start a ARK Server.
+I am using this Discord Bot to start an ARK Server.
 
 # Getting started
 - Install [node.js](https://nodejs.org/en/)
@@ -50,6 +56,6 @@ I am using this Discord Bot to start a ARK Server.
 
 ## Known Issues
 
-- Bot crashes when updating the status https://github.com/emilkrebs/Nitrado-Bot/issues/3
+- **[FATAL]** Bot crashes when updating the status https://github.com/emilkrebs/Nitrado-Bot/issues/3
 
 [Add Issue](https://github.com/emilkrebs/Nitrado-Bot/issues/new)
