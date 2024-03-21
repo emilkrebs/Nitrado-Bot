@@ -17,13 +17,14 @@
 
 <hr>
 
-**⚠️This project needs a major rework and currently has many issues.⚠️**
-
-- [ ] Update discord.js 
-- [ ] Fix fatal issue https://github.com/emilkrebs/Nitrado-Bot/issues/3
-- [ ] move from colors to chalk
-- [ ] update node-fetch
-- [ ] update typescript
+> [!WARNING]\
+> This project needs a major rework and currently has many issues!
+> 
+> - [ ] Update discord.js 
+> - [ ] Fix fatal issue https://github.com/emilkrebs/Nitrado-Bot/issues/3
+> - [ ] move from colors to chalk
+> - [ ] update node-fetch
+> - [ ] update typescript
  
 This Bot lets you and others start your Nitrado Gameserver from Discord. 
 
